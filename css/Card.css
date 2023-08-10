@@ -1,1 +1,80 @@
-/* hello */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(/image/CardImage/homegame.avif);
+  font-family: Arial, sans-serif;
+}
+#imagefirst{
+  height: 200px;
+  width: 200px;
+  margin-top: 40px;
+}
+#startButton{
+  background-color: green;
+}
+
+.memory-game {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  background-color: #262626;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #fffcfb;
+  color: #fff;
+}
+
+.card-back {
+  background-color: #fffcfb;
+  transform: rotateY(180deg);
+}
+
+.timer {
+  margin-top: 20px;
+  font-size: 30px;
+  color: red;
+}
+
+.card-image{
+  max-width: 100px;
+  max-height: 100px;
+  
+}
