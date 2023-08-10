@@ -5,20 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Best Gambling Site</title>
     <link rel="stylesheet" href="css/homeP.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="logo-container">
-        <img src="/image/HomeP.img/vt.Logo.jpeg" alt="" class="logo">
-        <button class="button">Play Now</button>
-      </div>
-      
-      <div class="logo-container">
-        <img src="/image/HomeP.img/wc.logo.jpeg" alt="" class="logo">
-        <button class="button">Play Now</button>
-      </div>
-      
-      <div class="logo-container">
-        <img src="/image/HomeP.img/cardsL.jpg" alt="" class="logo">
-        <button class="button">Play Now</button>
+    <div class="game-container">
+        <div class="logo-container">
+            <button class="button">Play Now</button>
+            <img src="image/V.T.imgs/Logo.jpeg" alt="" class="logo">
+        </div>
+        <div class="rating-container">
+            <div class="rating" id="rating1">
+                <div class="heart" data-rating="1"></div>
+                <div class="heart" data-rating="2"></div>
+                <div class="heart" data-rating="3"></div>
+                <div class="heart" data-rating="4"></div>
+                <div class="heart" data-rating="5"></div>
+            </div>
+            <div class="result">Rating: 0</div>
+        </div>
+    </div>
+    
+    <div class="game-container">
+        <div class="logo-container">
+            <button class="button">Play Now</button>
+            <img src="/image/HomeP.img/wc.logo.jpeg" alt="" class="logo">
+        </div>
+        <div class="rating-container">
+            <div class="rating" id="rating2">
+                <div class="heart" data-rating="1"></div>
+                <div class="heart" data-rating="2"></div>
+                <div class="heart" data-rating="3"></div>
+                <div class="heart" data-rating="4"></div>
+                <div class="heart" data-rating="5"></div>
+            </div>
+            <div class="result">Rating: 0</div>
+        </div>
+    </div>
+    
+    <div class="game-container">
+        <div class="logo-container">
+            <button class="button">Play Now</button>
+            <img src="/image/HomeP.img/cardsL.jpg" alt="" class="logo">
+        </div>
+        <div class="rating-container">
+            <div class="rating" id="rating3">
+                <div class="heart" data-rating="1"></div>
+                <div class="heart" data-rating="2"></div>
+                <div class="heart" data-rating="3"></div>
+                <div class="heart" data-rating="4"></div>
+                <div class="heart" data-rating="5"></div>
+            </div>
+            <div class="result">Rating: 0</div>
+        </div>
+    </div>
+    
+    <script src="homePage.js"></script>
 </body>
 </html>
