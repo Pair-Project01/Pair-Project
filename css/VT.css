@@ -1,0 +1,75 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200728/pngtree-poker-casino-betting-dice-chips-border-background-image_372331.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+#logo {
+  width: 250px;
+  height: 250px;
+  border-radius: 60px;
+}
+
+h1 {
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+
+#game {
+  background-color: #2b2b2b;
+  border: 2px solid #1a1a1a;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#secretNumber,
+#guessInput,
+#result {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 70px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #1a1a1a;
+  border: 2px solid #666;
+  color: #fff;
+  border-radius: 5px;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #ffd700;
+  color: #1a1a1a;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: red;
+}
+
+#resultText {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#resultText.success {
+  color: #4caf50;
+}
+
+#resultText.failure {
+  color: #f44336;
+}
