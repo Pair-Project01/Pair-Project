@@ -1,155 +1,80 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-h1{
-  text-align: center;
-  color: #e2fb00;
-  font-size: 50px;
-}
-p{
-  font-size: 20px;
-}
-body{
+body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 931px;
-  background: #6563ff;
+  height: 100vh;
+  margin: 0;
+  background-image: url(/image/CardImage/homegame.avif);
+  font-family: Arial, sans-serif;
+}
+#imagefirst{
+  height: 200px;
+  width: 200px;
+  margin-top: 40px;
+}
+#startButton{
+  background-color: green;
 }
 
-.wrapper{
-  padding: 250px 500px;
-  margin-right: 50px;
-  background: #e83535;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px black;
- 
+.memory-game {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  margin-top: 20px;
 }
-.cards, .card, .view, .details, p{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cards{
-  height: 350px;
-  width: 350px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.cards .card{
+
+.card {
+  width: 100px;
+  height: 150px;
+  background-color: #262626;
+  border-radius: 5px;
   cursor: pointer;
   position: relative;
-  perspective: 100px;
+  perspective: 1000px;
   transform-style: preserve-3d;
-  height: calc(100% / 4 - 10px);
-  width: calc(100% / 4 - 10px);
-  
 }
-.card.shake{
-  animation: shake 0.35s ease-in-out;
-}
-.cards .card .view{
+
+.card-inner {
   width: 100%;
   height: 100%;
-  pointer-events: none;
-  position: absolute;
-  background: #fff;
-  border-radius: 7px;
-  backface-visibility: hidden;
-  transition: transform 0.25s linear;
-  box-shadow: 0 3px 10px black;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out;
 }
-.card .front-view img{
-  max-width: 17px;
-}
-.card .back-view{
-  transform: rotateY(-180deg); /* rotateY() a transformation that rotates an element around axis vertical without deforming */
-}
-.card .back-view img{
-  max-width: 40px;
-}
-.card.true .front-view{
+
+.card-flipped .card-inner {
   transform: rotateY(180deg);
 }
-.card.true .back-view{
-  transform: rotateY(0);
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  backface-visibility: hidden;
 }
 
-.details{
-  width: 100%;
-  margin-top: 15px;
-  padding: 0 20px;
-  border-radius: 7px;
-  background: #fff;
-  height: calc(100% / 4 - 30px);
-  justify-content: space-between;
-  box-shadow: 0 3px 10px black;
+.card-front {
+  background-color: #fffcfb;
+  color: #fff;
 }
-.details p{
-  font-size: 18px;
-  height: 17px;
-  padding-right: 18px;
-  border-right: 1px solid #ccc;
+
+.card-back {
+  background-color: #fffcfb;
+  transform: rotateY(180deg);
 }
-.details p span{
-  margin-left: 8px;
+
+.timer {
+  margin-top: 20px;
+  font-size: 30px;
+  color: red;
 }
-.details p b{
-  font-weight: 500;
-}
-.details button{
-  cursor: pointer;
-  font-size: 14px;
-  color: #6563ff;
-  border-radius: 4px;
-  padding: 4px 11px;
-  background: #fff;
-  border: 2px solid #6563ff;
+
+.card-image{
+  max-width: 100px;
+  max-height: 100px;
   
 }
-.details button:hover{
-  color: #fff;
-  background: #f70000;
-}
-
- 
-  .cards{
-    height: 350px;
-    width: 350px;
-  }
-  .card .front-view img{
-    max-width: 200px;
-  }
-  .card .back-view img{
-    max-width: 200px;
-  }
-
-
-  .cards{
-    height: 900px;
-    width: 900px;
-  }
-  .card .back-view img{
-    max-width: 35px;
-  }
-  .details{
-    margin-top: 20px;
-    padding: 15px;
-    height: calc(40% / 4 - 20px);  /* calc() for take specific angel or percentage number value*/ 
-  }
-  .details p{
-    height: 15px;
-    font-size: 17px;
-    padding-right: 13px;
-  }
-  .details button{
-    font-size: 25px;
-    padding: 5px 10px;
-    border: none;
-    color: #fff;
-    background: green;
-  }
-
