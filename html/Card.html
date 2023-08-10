@@ -1,123 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" >
-  <head>
-    <meta charset="utf-8">  
-    <title>Abdou Game </title>
-    <link rel="stylesheet" href="/css/Card.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-
-  <body>
-    <div class="wrapper">
-        <h1> Game Card</h1>
-      <ul class="cards">
-        <li class="card">
-          <div class="view front-view">
-            <img src="/image/CardImage/logo.jpg" alt="icon">
-          </div>
-          <div class="view back-view">
-            <img src="/image/CardImage/1.png" alt="card-img">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="/image/CardImage/logo.jpg" alt="icon">
-          </div>
-          <div class="view back-view">
-            <img src="/image/CardImage/2.png" alt="card-img">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="/image/CardImage/logo.jpg" alt="icon">
-          </div>
-          <div class="view back-view">
-            <img src="/image/CardImage/3.jpg" alt="card-img">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="/image/CardImage/logo.jpg" alt="icon">
-          </div>
-          <div class="view back-view">
-            <img src="/image/CardImage/4.jpg" alt="card-img">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="/image/CardImage/logo.jpg" alt="icon">
-          </div>
-          <div class="view back-view">
-            <img src="/image/CardImage/5.jpg" alt="card-img">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="/image/CardImage/logo.jpg" alt="icon">
-          </div>
-          <div class="view back-view">
-            <img src="/image/CardImage/6.jpg" alt="card-img">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="/image/CardImage/logo.jpg" alt="icon">
-          </div>
-          <div class="view back-view">
-            <img src="/image/CardImage/5.jpg" alt="card-img">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="/image/CardImage/logo.jpg" alt="icon">
-          </div>
-          <div class="view back-view">
-            <img src="/image/CardImage/6.jpg" alt="card-img">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="/image/CardImage/logo.jpg" alt="icon">
-          </div>
-          <div class="view back-view">
-            <img src="/image/CardImage/1.png" alt="card-img">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="/image/CardImage/logo.jpg" alt="icon">
-          </div>
-          <div class="view back-view">
-            <img src="/image/CardImage/2.png" alt="card-img">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="/image/CardImage/logo.jpg" alt="icon">
-          </div>
-          <div class="view back-view">
-            <img src="/image/CardImage/3.jpg" alt="card-img">
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="/image/CardImage/logo.jpg" alt="icon">
-          </div>
-          <div class="view back-view">
-            <img src="/image/CardImage/4.jpg" alt="card-img">
-          </div>
-        </li>
-        <div class="details">
-          <p class="time">Time: <span><b>20</b>s</span></p>
-          <p class="True">True: <span><b>0</b></span></p>
-          <button id="Start">Start</button>
-          <button id="withdraw">withdraw</button>
-        </div>
-      </ul>
-    </div>
-
-    <script src="/js/CardGame.js"></script>
-    
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="/css/Card.css">
+</head>
+<body>
+  <button id="startButton">Start Game</button>
+  <div class="memory-game">
+    <img class="BackImg">
+    <!-- Cards will be dynamically generated here -->
+  </div>
+  <div class="timer">
+    Time left: <span id="timer">30</span> seconds
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/CardGame.js"></script>
+</body>
 </html>
