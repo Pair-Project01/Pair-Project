@@ -115,7 +115,7 @@ $(document).ready(function () {
 
       if (remainingTime === 0) {
         clearInterval(timerInterval);
-        alert("Time's up! Game over.");
+        alert("Time's up! Game over, to get more 5 seconds Watch Video bellow : watch ads");
         $("#startButton").prop("disabled", true);
         
 
