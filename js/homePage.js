@@ -1,8 +1,8 @@
 $(document).ready(function() {
     $('.rating').each(function() {
-        let selectedRating = 0;
-        let ratingContainer = $(this);
-        let resultElement = ratingContainer.next('.result');
+        var selectedRating = 0;
+        var ratingContainer = $(this);
+        var resultElement = ratingContainer.next('.result');
 
         ratingContainer.find('.heart').click(function() {
             selectedRating = parseInt($(this).attr('data-rating'));
