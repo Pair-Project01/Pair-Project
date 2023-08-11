@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Best Gambling Site</title>
     <link rel="stylesheet" href="css/homeP.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <h1 id="greeting">Welcome To The Gambling World</h1>
+    <button id="user">Add Player Name</button>
+    <input id="userName" type="text">
+    <button id="reset">Reset</button>
     <div class="game-container">
         <div class="logo-container">
-            <button class="button">Play Now</button>
+            <button class="button" disabled><a href="/html/VT.html">Play Now</a></button>
             <img src="image/V.T.imgs/Logo.jpeg" alt="" class="logo">
         </div>
         <div class="rating-container">
@@ -27,7 +30,7 @@
     
     <div class="game-container">
         <div class="logo-container">
-            <button class="button">Play Now</button>
+            <button class="button" disabled><a href="/html/TWC.html">Play Now</a></button>
             <img src="/image/HomeP.img/wc.logo.jpeg" alt="" class="logo">
         </div>
         <div class="rating-container">
@@ -44,8 +47,8 @@
     
     <div class="game-container">
         <div class="logo-container">
-            <button class="button">Play Now</button>
-            <img src="/image/HomeP.img/cardsL.jpg" alt="" class="logo">
+            <button class="button" disabled><a href="/html/Card.html">Play Now</a></button>
+            <img src="/image/CardImage/card logo.jpeg" alt="" class="logo">
         </div>
         <div class="rating-container">
             <div class="rating" id="rating3">
@@ -58,7 +61,7 @@
             <div class="result">Rating: 0</div>
         </div>
     </div>
-    
-    <script src="homePage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/homePage.js"></script>
 </body>
 </html>
